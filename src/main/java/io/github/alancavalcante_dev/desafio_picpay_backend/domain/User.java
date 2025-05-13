@@ -2,7 +2,6 @@ package io.github.alancavalcante_dev.desafio_picpay_backend.domain;
 
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
 import lombok.Data;
 
 import java.math.BigDecimal;
