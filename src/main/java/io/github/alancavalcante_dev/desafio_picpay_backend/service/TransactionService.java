@@ -1,5 +1,6 @@
 package io.github.alancavalcante_dev.desafio_picpay_backend.service;
 
+import io.github.alancavalcante_dev.desafio_picpay_backend.domain.AuthorizationTransaction;
 import io.github.alancavalcante_dev.desafio_picpay_backend.domain.Transaction;
 import io.github.alancavalcante_dev.desafio_picpay_backend.domain.User;
 import io.github.alancavalcante_dev.desafio_picpay_backend.repository.TransactionRepository;
@@ -9,17 +10,18 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
 public class TransactionService {
 
-    private UserRepository userRepository;
-    private TransactionRepository transactionRepository;
+    private final UserRepository userRepository;
+    private final TransactionRepository transactionRepository;
+    private final AuthorizationTransaction authorizationTransaction;
+    private final NotificationTransactionSender notificationTransactionSender;
 
     @Transactional
-    public Transaction registerTransaction(Transaction transaction) {
+    public void registerTransaction(Transaction transaction) {
         validatorTransaction(transaction);
 
         User payer = userRepository.findById(transaction.getPayer())
@@ -43,7 +45,15 @@ public class TransactionService {
 
         userRepository.save(payer);
         userRepository.save(payee);
-        return transactionRepository.save(transaction);
+
+        if (!authorizationTransaction.authorized()) {
+            throw new RuntimeException("Sistema externo não autorizado.");
+        }
+
+        transactionRepository.save(transaction);
+
+        notificationTransactionSender.sender(payer, "Pagamento realizado com sucesso!", value);
+        notificationTransactionSender.sender(payee, "Você recebeu um pagamento!", value);
     }
 
     public void validatorTransaction(Transaction transaction) {
