@@ -1,11 +1,12 @@
-package io.github.alancavalcante_dev.desafio_picpay_backend.domain;
+package io.github.alancavalcante_dev.desafio_picpay_backend.service;
 
+import io.github.alancavalcante_dev.desafio_picpay_backend.domain.User;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import java.time.OffsetDateTime;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "tbl_transaction_notification_errors")
@@ -21,7 +22,7 @@ public class TransactionNotificationError {
     private User user;
 
     @CreatedDate
-    private OffsetDateTime dateTime;
+    private LocalDateTime dateTime;
 
     public TransactionNotificationError(User user) {
         this.user = user;

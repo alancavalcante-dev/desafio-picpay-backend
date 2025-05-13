@@ -20,12 +20,7 @@ public class TransactionController {
 
     @PostMapping
     public ResponseEntity<Void> registerTransaction(@RequestBody TransactionDTO data) {
-        Transaction transaction = new Transaction();
-
-        transaction.setPayee(data.payee());
-        transaction.setPayer(data.payer());
-        transaction.setValue(data.value());
-
+        Transaction transaction = new Transaction(data.payer(), data.payee(), data.value());
         service.registerTransaction(transaction);
         return ResponseEntity.ok().build();
     }

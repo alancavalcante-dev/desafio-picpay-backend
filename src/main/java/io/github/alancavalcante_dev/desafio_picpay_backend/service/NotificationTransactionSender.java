@@ -1,6 +1,5 @@
 package io.github.alancavalcante_dev.desafio_picpay_backend.service;
 
-import io.github.alancavalcante_dev.desafio_picpay_backend.domain.TransactionNotificationError;
 import io.github.alancavalcante_dev.desafio_picpay_backend.domain.User;
 import io.github.alancavalcante_dev.desafio_picpay_backend.repository.TransactionNotificationErrorRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -41,10 +40,14 @@ public class NotificationTransactionSender {
                     request,
                     String.class
             );
-            log.info("Notificação enviada: " + response.getBody());
+
+            if ( response.getStatusCode().is2xxSuccessful() ) {
+                log.info("Notificação enviada para {}", user.getEmail());
+            }
+            throw new RestClientException("Falha ao enviar notificação.");
 
         } catch (RestClientException e) {
-            log.info("Falha ao enviar notificação.");
+            log.info(e.getMessage());
 
             repository.save(new TransactionNotificationError(user));
             log.info("Erro de notificação salvada.");

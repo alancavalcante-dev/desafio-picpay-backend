@@ -1,6 +1,5 @@
 package io.github.alancavalcante_dev.desafio_picpay_backend.service;
 
-import io.github.alancavalcante_dev.desafio_picpay_backend.domain.AuthorizationTransaction;
 import io.github.alancavalcante_dev.desafio_picpay_backend.domain.Transaction;
 import io.github.alancavalcante_dev.desafio_picpay_backend.domain.User;
 import io.github.alancavalcante_dev.desafio_picpay_backend.repository.TransactionRepository;
@@ -62,7 +61,7 @@ public class TransactionService {
     }
 
     public void validateFields(BigDecimal value) {
-        if (value.compareTo(BigDecimal.ZERO) > 0) {
+        if (value.compareTo(BigDecimal.ZERO) <= 0) {
             throw new RuntimeException("Tem que passar algum valor!");
         }
     }

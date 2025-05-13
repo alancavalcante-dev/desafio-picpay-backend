@@ -6,6 +6,8 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
 
 @Entity
@@ -25,6 +27,13 @@ public class Transaction {
     private Long payee;
 
     @CreatedDate
-    private OffsetDateTime dateTime;
+    private LocalDateTime dateTime;
+
+
+    public Transaction(Long payer, Long payee, BigDecimal value) {
+        this.payer = payer;
+        this.payee = payee;
+        this.value = value;
+    }
 
 }
