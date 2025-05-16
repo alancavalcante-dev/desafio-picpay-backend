@@ -6,18 +6,20 @@ import io.github.alancavalcante_dev.desafio_picpay_backend.repository.Transactio
 import io.github.alancavalcante_dev.desafio_picpay_backend.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class TransactionService {
 
     private final UserRepository userRepository;
     private final TransactionRepository transactionRepository;
     private final AuthorizationTransaction authorizationTransaction;
-    private final NotificationTransactionSender notificationTransactionSender;
+    private final TransactionNotificationSender transactionNotificationSender;
 
     @Transactional
     public void registerTransaction(Transaction transaction) {
@@ -27,7 +29,7 @@ public class TransactionService {
                 .orElseThrow(() -> new RuntimeException("Pagador não encontrado"));
 
         User payee = userRepository.findById(transaction.getPayee())
-                .orElseThrow(() -> new RuntimeException("Recebedor não encontrado"));
+                .orElseThrow(() -> new RuntimeException(""));
 
         if (payer.isShopkeeper()) {
             throw new RuntimeException("O lojista não pode fazer pagamento");
@@ -51,8 +53,8 @@ public class TransactionService {
 
         transactionRepository.save(transaction);
 
-        notificationTransactionSender.sender(payer, "Pagamento realizado com sucesso!", value);
-        notificationTransactionSender.sender(payee, "Você recebeu um pagamento!", value);
+        transactionNotificationSender.sender(payer, "Pagamento realizado com sucesso!", value);
+        transactionNotificationSender.sender(payee, "Você recebeu um pagamento!", value);
     }
 
     public void validatorTransaction(Transaction transaction) {

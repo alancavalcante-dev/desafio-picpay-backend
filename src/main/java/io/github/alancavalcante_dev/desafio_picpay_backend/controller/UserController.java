@@ -34,7 +34,7 @@ public class UserController {
         user.setEmail(data.email());
         user.setPassword(BCrypt.hashpw(data.password(), BCrypt.gensalt()));
         user.setShopkeeper(data.isShopkeeper());
-        user.setBalance(BigDecimal.valueOf(0));
+        user.setBalance(data.balance());
 
         service.registerUser(user);
 

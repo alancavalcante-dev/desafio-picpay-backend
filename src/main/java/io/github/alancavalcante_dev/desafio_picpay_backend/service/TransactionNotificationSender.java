@@ -18,7 +18,7 @@ import java.util.Map;
 
 @Service
 @Slf4j
-public class NotificationTransactionSender {
+public class TransactionNotificationSender {
 
     private final RestTemplate restTemplate = new RestTemplate();
 
