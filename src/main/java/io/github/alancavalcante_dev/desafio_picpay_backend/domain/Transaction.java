@@ -1,5 +1,6 @@
 package io.github.alancavalcante_dev.desafio_picpay_backend.domain;
 
+import io.github.alancavalcante_dev.desafio_picpay_backend.controller.dto.TransactionDTO;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
@@ -35,5 +36,15 @@ public class Transaction {
         this.payee = payee;
         this.value = value;
     }
+
+    public static Transaction dtoToEntity(TransactionDTO dto) {
+        return new Transaction(
+                dto.payer(),
+                dto.payee(),
+                dto.value()
+        );
+    }
+
+
 
 }

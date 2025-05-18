@@ -36,7 +36,7 @@ public class UserController {
         user.setShopkeeper(data.isShopkeeper());
         user.setBalance(data.balance());
 
-        service.registerUser(user);
+        service.saveUser(user);
 
         return ResponseEntity.ok().build();
     }

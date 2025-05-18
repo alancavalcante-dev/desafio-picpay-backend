@@ -29,7 +29,7 @@ public class TransactionService {
                 .orElseThrow(() -> new RuntimeException("Pagador não encontrado"));
 
         User payee = userRepository.findById(transaction.getPayee())
-                .orElseThrow(() -> new RuntimeException(""));
+                .orElseThrow(() -> new RuntimeException("Recebedor não encontrado"));
 
         if (payer.isShopkeeper()) {
             throw new RuntimeException("O lojista não pode fazer pagamento");
