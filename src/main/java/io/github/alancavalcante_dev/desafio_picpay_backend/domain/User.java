@@ -39,7 +39,7 @@ public class User {
 
     public User() {}
 
-    public User(long id, String firstName, String lastName, String cpfCnpj, String email, String password, boolean isShopkeeper, BigDecimal bigDecimal) {
+    public User(long id, String firstName, String lastName, String cpfCnpj, String email, String password, boolean isShopkeeper, BigDecimal balance) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -47,7 +47,7 @@ public class User {
         this.email = email;
         this.password = password;
         this.isShopkeeper = isShopkeeper;
-        this.balance = bigDecimal;
+        this.balance = balance;
     }
 
     public static User dtoToEntity(UserDTO dto) {

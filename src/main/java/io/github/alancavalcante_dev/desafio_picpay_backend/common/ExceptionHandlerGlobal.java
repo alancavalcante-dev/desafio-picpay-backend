@@ -5,18 +5,17 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+/** Classe feita para não passar erros para o usuário que esteja consultando.
+ * Assim não passa erros que possam gerar uma falha de segurança.
+ * */
+
 @Slf4j
 @RestControllerAdvice
 public class ExceptionHandlerGlobal {
 
-    /** Classe feita para nõo passar erros para o usuário que esteja consultando.
-     * Assim não passa erros que possam gerar uma falha de segurança.
-     * */
-
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<String> handleRuntime(RuntimeException ex) {
-        log.info("ERROR: "+ ex.getMessage());
+        log.error("ERROR: {}", ex.getMessage());
         return ResponseEntity.badRequest().build();
     }
-
 }

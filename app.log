@@ -1,0 +1,251 @@
+2025-05-19T21:36:32.612-03:00  INFO 6284 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-19T21:36:32.619-03:00  INFO 6284 --- [desafio-picpay-backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-19T21:36:32.620-03:00  INFO 6284 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-19T21:36:32.624-03:00  INFO 6284 --- [desafio-picpay-backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-19T21:36:32.633-03:00  INFO 6284 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T21:36:32.634-03:00  INFO 6284 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-19T21:36:32.637-03:00  INFO 6284 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-19T21:37:50.465-03:00  INFO 8688 --- [desafio-picpay-backend] [main] i.g.a.d.DesafioPicpayBackendApplication  : Starting DesafioPicpayBackendApplication using Java 23.0.2 with PID 8688 (C:\Users\ghost\Desktop\desafio-picpay-backend\target\classes started by ghost in C:\Users\ghost\Desktop\desafio-picpay-backend)
+2025-05-19T21:37:50.468-03:00  INFO 8688 --- [desafio-picpay-backend] [main] i.g.a.d.DesafioPicpayBackendApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-05-19T21:37:51.754-03:00  INFO 8688 --- [desafio-picpay-backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-19T21:37:51.824-03:00  INFO 8688 --- [desafio-picpay-backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
+2025-05-19T21:37:52.606-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-19T21:37:52.622-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-19T21:37:52.623-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-19T21:37:52.689-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-19T21:37:52.690-03:00  INFO 8688 --- [desafio-picpay-backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2156 ms
+2025-05-19T21:37:52.992-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-19T21:37:53.051-03:00  INFO 8688 --- [desafio-picpay-backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-19T21:37:53.084-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-19T21:37:53.393-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-19T21:37:53.426-03:00  INFO 8688 --- [desafio-picpay-backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-19T21:37:53.593-03:00  INFO 8688 --- [desafio-picpay-backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:devdb user=SA
+2025-05-19T21:37:53.595-03:00  INFO 8688 --- [desafio-picpay-backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-19T21:37:53.625-03:00  WARN 8688 --- [desafio-picpay-backend] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-19T21:37:53.645-03:00  INFO 8688 --- [desafio-picpay-backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-19T21:37:54.412-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: io.github.alancavalcante_dev.desafio_picpay_backend.domain.Transaction (class must be instantiated by Interceptor)
+2025-05-19T21:37:54.467-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: io.github.alancavalcante_dev.desafio_picpay_backend.service.TransactionNotificationError (class must be instantiated by Interceptor)
+2025-05-19T21:37:54.641-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-19T21:37:54.713-03:00  INFO 8688 --- [desafio-picpay-backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T21:37:55.323-03:00  WARN 8688 --- [desafio-picpay-backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-19T21:37:56.160-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:devdb'
+2025-05-19T21:37:56.255-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-19T21:37:56.330-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-05-19T21:37:56.330-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-19T21:37:56.331-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-19T21:37:56.355-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-05-19T21:37:56.355-03:00  INFO 8688 --- [desafio-picpay-backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 96 ms
+2025-05-19T21:37:56.369-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-05-19T21:37:56.432-03:00  INFO 8688 --- [desafio-picpay-backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2025-05-19T21:37:56.448-03:00  INFO 8688 --- [desafio-picpay-backend] [main] i.g.a.d.DesafioPicpayBackendApplication  : Started DesafioPicpayBackendApplication in 6.56 seconds (process running for 6.96)
+2025-05-19T21:38:28.237-03:00  INFO 8688 --- [desafio-picpay-backend] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-19T21:38:28.237-03:00  INFO 8688 --- [desafio-picpay-backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-19T21:38:28.238-03:00  INFO 8688 --- [desafio-picpay-backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-19T21:38:28.670-03:00 ERROR 8688 --- [desafio-picpay-backend] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)'] with root cause
+
+java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)'
+	at org.springdoc.core.service.GenericResponseService.lambda$getGenericMapResponse$8(GenericResponseService.java:706) ~[springdoc-openapi-starter-common-2.6.0.jar:2.6.0]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:196) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:636) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:291) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:656) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:662) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:667) ~[na:na]
+	at org.springdoc.core.service.GenericResponseService.getGenericMapResponse(GenericResponseService.java:708) ~[springdoc-openapi-starter-common-2.6.0.jar:2.6.0]
+	at org.springdoc.core.service.GenericResponseService.build(GenericResponseService.java:247) ~[springdoc-openapi-starter-common-2.6.0.jar:2.6.0]
+	at org.springdoc.api.AbstractOpenApiResource.calculatePath(AbstractOpenApiResource.java:499) ~[springdoc-openapi-starter-common-2.6.0.jar:2.6.0]
+	at org.springdoc.api.AbstractOpenApiResource.calculatePath(AbstractOpenApiResource.java:676) ~[springdoc-openapi-starter-common-2.6.0.jar:2.6.0]
+	at org.springdoc.webmvc.api.OpenApiResource.lambda$calculatePath$11(OpenApiResource.java:220) ~[springdoc-openapi-starter-webmvc-api-2.6.0.jar:2.6.0]
+	at java.base/java.util.Optional.ifPresent(Optional.java:178) ~[na:na]
+	at org.springdoc.webmvc.api.OpenApiResource.calculatePath(OpenApiResource.java:201) ~[springdoc-openapi-starter-webmvc-api-2.6.0.jar:2.6.0]
+	at org.springdoc.webmvc.api.OpenApiResource.lambda$getPaths$2(OpenApiResource.java:171) ~[springdoc-openapi-starter-webmvc-api-2.6.0.jar:2.6.0]
+	at java.base/java.util.Optional.ifPresent(Optional.java:178) ~[na:na]
+	at org.springdoc.webmvc.api.OpenApiResource.getPaths(OpenApiResource.java:150) ~[springdoc-openapi-starter-webmvc-api-2.6.0.jar:2.6.0]
+	at org.springdoc.api.AbstractOpenApiResource.getOpenApi(AbstractOpenApiResource.java:353) ~[springdoc-openapi-starter-common-2.6.0.jar:2.6.0]
+	at org.springdoc.webmvc.api.OpenApiResource.openapiJson(OpenApiResource.java:125) ~[springdoc-openapi-starter-webmvc-api-2.6.0.jar:2.6.0]
+	at org.springdoc.webmvc.api.OpenApiWebMvcResource.openapiJson(OpenApiWebMvcResource.java:114) ~[springdoc-openapi-starter-webmvc-api-2.6.0.jar:2.6.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.40.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.6.jar:6.2.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.40.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-05-19T21:38:40.036-03:00  INFO 8688 --- [desafio-picpay-backend] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServletRegistration'
+2025-05-19T21:38:40.037-03:00  INFO 8688 --- [desafio-picpay-backend] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServletRegistration'
+2025-05-19T21:38:40.037-03:00  INFO 8688 --- [desafio-picpay-backend] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-05-19T21:39:44.716-03:00  INFO 17340 --- [desafio-picpay-backend] [main] i.g.a.d.repository.UserRepositoryTest    : Starting UserRepositoryTest using Java 23.0.2 with PID 17340 (started by ghost in C:\Users\ghost\Desktop\desafio-picpay-backend)
+2025-05-19T21:39:44.718-03:00  INFO 17340 --- [desafio-picpay-backend] [main] i.g.a.d.repository.UserRepositoryTest    : The following 1 profile is active: "test"
+2025-05-19T21:39:45.177-03:00  INFO 17340 --- [desafio-picpay-backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-19T21:39:45.244-03:00  INFO 17340 --- [desafio-picpay-backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
+2025-05-19T21:39:45.312-03:00  INFO 17340 --- [desafio-picpay-backend] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2025-05-19T21:39:45.443-03:00  INFO 17340 --- [desafio-picpay-backend] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:7804f4f8-1cd7-4ee9-a3bd-903bb2a10c7d;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2025-05-19T21:39:45.723-03:00  INFO 17340 --- [desafio-picpay-backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-19T21:39:45.784-03:00  INFO 17340 --- [desafio-picpay-backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-19T21:39:45.822-03:00  INFO 17340 --- [desafio-picpay-backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-19T21:39:46.128-03:00  INFO 17340 --- [desafio-picpay-backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-19T21:39:46.182-03:00  WARN 17340 --- [desafio-picpay-backend] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-19T21:39:46.201-03:00  INFO 17340 --- [desafio-picpay-backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@69bc9584']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-19T21:39:46.873-03:00  INFO 17340 --- [desafio-picpay-backend] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: io.github.alancavalcante_dev.desafio_picpay_backend.domain.Transaction (class must be instantiated by Interceptor)
+2025-05-19T21:39:46.934-03:00  INFO 17340 --- [desafio-picpay-backend] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: io.github.alancavalcante_dev.desafio_picpay_backend.service.TransactionNotificationError (class must be instantiated by Interceptor)
+2025-05-19T21:39:47.105-03:00  INFO 17340 --- [desafio-picpay-backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-19T21:39:47.167-03:00  INFO 17340 --- [desafio-picpay-backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T21:39:47.569-03:00  INFO 17340 --- [desafio-picpay-backend] [main] i.g.a.d.repository.UserRepositoryTest    : Started UserRepositoryTest in 3.363 seconds (process running for 4.823)
+2025-05-19T21:39:48.213-03:00  INFO 17340 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T21:39:55.040-03:00  INFO 8688 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-19T21:39:55.046-03:00  INFO 8688 --- [desafio-picpay-backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-19T21:39:55.047-03:00  INFO 8688 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-19T21:39:55.050-03:00  INFO 8688 --- [desafio-picpay-backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-19T21:39:55.059-03:00  INFO 8688 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T21:39:55.063-03:00  INFO 8688 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-19T21:39:55.066-03:00  INFO 8688 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-19T21:49:30.342-03:00  INFO 12976 --- [desafio-picpay-backend] [main] a.d.DesafioPicpayBackendApplicationTests : Starting DesafioPicpayBackendApplicationTests using Java 23.0.2 with PID 12976 (started by ghost in C:\Users\ghost\Desktop\desafio-picpay-backend)
+2025-05-19T21:49:30.344-03:00  INFO 12976 --- [desafio-picpay-backend] [main] a.d.DesafioPicpayBackendApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-05-19T21:49:31.475-03:00  INFO 12976 --- [desafio-picpay-backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-19T21:49:31.541-03:00  INFO 12976 --- [desafio-picpay-backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
+2025-05-19T21:49:32.229-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-19T21:49:32.286-03:00  INFO 12976 --- [desafio-picpay-backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-19T21:49:32.320-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-19T21:49:32.640-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-19T21:49:32.671-03:00  INFO 12976 --- [desafio-picpay-backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-19T21:49:32.833-03:00  INFO 12976 --- [desafio-picpay-backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:devdb user=SA
+2025-05-19T21:49:32.835-03:00  INFO 12976 --- [desafio-picpay-backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-19T21:49:32.860-03:00  WARN 12976 --- [desafio-picpay-backend] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-19T21:49:32.880-03:00  INFO 12976 --- [desafio-picpay-backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-19T21:49:33.582-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: io.github.alancavalcante_dev.desafio_picpay_backend.domain.Transaction (class must be instantiated by Interceptor)
+2025-05-19T21:49:33.639-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: io.github.alancavalcante_dev.desafio_picpay_backend.service.TransactionNotificationError (class must be instantiated by Interceptor)
+2025-05-19T21:49:33.794-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-19T21:49:33.853-03:00  INFO 12976 --- [desafio-picpay-backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T21:49:34.561-03:00  WARN 12976 --- [desafio-picpay-backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-19T21:49:35.502-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:devdb'
+2025-05-19T21:49:35.592-03:00  INFO 12976 --- [desafio-picpay-backend] [main] a.d.DesafioPicpayBackendApplicationTests : Started DesafioPicpayBackendApplicationTests in 5.57 seconds (process running for 6.758)
+2025-05-19T21:49:36.116-03:00  INFO 12976 --- [desafio-picpay-backend] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [io.github.alancavalcante_dev.desafio_picpay_backend.repository.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-19T21:49:36.167-03:00  INFO 12976 --- [desafio-picpay-backend] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration io.github.alancavalcante_dev.desafio_picpay_backend.DesafioPicpayBackendApplication for test class io.github.alancavalcante_dev.desafio_picpay_backend.repository.UserRepositoryTest
+2025-05-19T21:49:36.196-03:00  INFO 12976 --- [desafio-picpay-backend] [main] i.g.a.d.repository.UserRepositoryTest    : Starting UserRepositoryTest using Java 23.0.2 with PID 12976 (started by ghost in C:\Users\ghost\Desktop\desafio-picpay-backend)
+2025-05-19T21:49:36.196-03:00  INFO 12976 --- [desafio-picpay-backend] [main] i.g.a.d.repository.UserRepositoryTest    : The following 1 profile is active: "test"
+2025-05-19T21:49:36.274-03:00  INFO 12976 --- [desafio-picpay-backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-19T21:49:36.286-03:00  INFO 12976 --- [desafio-picpay-backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2025-05-19T21:49:36.297-03:00  INFO 12976 --- [desafio-picpay-backend] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2025-05-19T21:49:36.312-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:f2432f66-ea7b-4d98-bea4-ca3cbb266fcd;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2025-05-19T21:49:36.332-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-19T21:49:36.336-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-19T21:49:36.345-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-19T21:49:36.347-03:00  WARN 12976 --- [desafio-picpay-backend] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-19T21:49:36.348-03:00  INFO 12976 --- [desafio-picpay-backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@19e3ce9a']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-19T21:49:36.380-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: io.github.alancavalcante_dev.desafio_picpay_backend.domain.Transaction (class must be instantiated by Interceptor)
+2025-05-19T21:49:36.382-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: io.github.alancavalcante_dev.desafio_picpay_backend.service.TransactionNotificationError (class must be instantiated by Interceptor)
+2025-05-19T21:49:36.389-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-19T21:49:36.397-03:00  INFO 12976 --- [desafio-picpay-backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T21:49:36.447-03:00  INFO 12976 --- [desafio-picpay-backend] [main] i.g.a.d.repository.UserRepositoryTest    : Started UserRepositoryTest in 0.276 seconds (process running for 7.613)
+2025-05-19T21:49:36.733-03:00  INFO 12976 --- [desafio-picpay-backend] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [io.github.alancavalcante_dev.desafio_picpay_backend.service.TransactionServiceTest]: TransactionServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-19T21:49:36.749-03:00  INFO 12976 --- [desafio-picpay-backend] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration io.github.alancavalcante_dev.desafio_picpay_backend.DesafioPicpayBackendApplication for test class io.github.alancavalcante_dev.desafio_picpay_backend.service.TransactionServiceTest
+2025-05-19T21:49:36.773-03:00  INFO 12976 --- [desafio-picpay-backend] [main] i.g.a.d.service.TransactionServiceTest   : Starting TransactionServiceTest using Java 23.0.2 with PID 12976 (started by ghost in C:\Users\ghost\Desktop\desafio-picpay-backend)
+2025-05-19T21:49:36.773-03:00  INFO 12976 --- [desafio-picpay-backend] [main] i.g.a.d.service.TransactionServiceTest   : The following 1 profile is active: "test"
+2025-05-19T21:49:37.071-03:00  INFO 12976 --- [desafio-picpay-backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-19T21:49:37.082-03:00  INFO 12976 --- [desafio-picpay-backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2025-05-19T21:49:37.558-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-19T21:49:37.562-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-19T21:49:37.575-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-19T21:49:37.576-03:00  INFO 12976 --- [desafio-picpay-backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-19T21:49:37.577-03:00  INFO 12976 --- [desafio-picpay-backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn15: url=jdbc:h2:mem:devdb user=SA
+2025-05-19T21:49:37.577-03:00  INFO 12976 --- [desafio-picpay-backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-19T21:49:37.578-03:00  WARN 12976 --- [desafio-picpay-backend] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-19T21:49:37.579-03:00  INFO 12976 --- [desafio-picpay-backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-19T21:49:37.623-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: io.github.alancavalcante_dev.desafio_picpay_backend.domain.Transaction (class must be instantiated by Interceptor)
+2025-05-19T21:49:37.626-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: io.github.alancavalcante_dev.desafio_picpay_backend.service.TransactionNotificationError (class must be instantiated by Interceptor)
+2025-05-19T21:49:37.631-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-19T21:49:37.644-03:00  INFO 12976 --- [desafio-picpay-backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T21:49:37.808-03:00  WARN 12976 --- [desafio-picpay-backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-19T21:49:38.367-03:00  INFO 12976 --- [desafio-picpay-backend] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:devdb'
+2025-05-19T21:49:38.418-03:00  INFO 12976 --- [desafio-picpay-backend] [main] i.g.a.d.service.TransactionServiceTest   : Started TransactionServiceTest in 1.664 seconds (process running for 9.584)
+2025-05-19T21:49:38.520-03:00  INFO 12976 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T21:49:38.522-03:00  INFO 12976 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-19T21:49:38.524-03:00  INFO 12976 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-19T21:49:38.525-03:00  INFO 12976 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T21:49:38.528-03:00  INFO 12976 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T21:49:38.529-03:00  INFO 12976 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-05-19T21:49:38.531-03:00  INFO 12976 --- [desafio-picpay-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.

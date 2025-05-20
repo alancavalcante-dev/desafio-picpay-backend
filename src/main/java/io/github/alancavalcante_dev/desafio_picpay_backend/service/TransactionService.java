@@ -11,6 +11,27 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 
+
+/**
+ * Serviço responsável por processar transações financeiras entre usuários.
+ *
+ * Principais responsabilidades:
+ * - Valida se os dados da transação são válidos.
+ * - Verifica se o pagador tem saldo suficiente e se não é um lojista (que não pode pagar).
+ * - Atualiza os saldos do pagador e do recebedor.
+ * - Consulta um serviço externo para autorizar a transação.
+ * - Salva a transação no banco de dados.
+ * - Envia notificações para ambas as partes (pagador e recebedor).
+ *
+ * ⚠️ Importante:
+ * - A autorização é feita por um serviço externo, que pode falhar; isso precisa ser tratado.
+ * - Lojistas não estão autorizados a realizar pagamentos.
+ * - Transações com valor zero ou entre o mesmo usuário são bloqueadas.
+ *
+ * Tudo ocorre dentro de uma transação (@Transactional), garantindo consistência no banco.
+ */
+
+
 @Service
 @RequiredArgsConstructor
 @Slf4j

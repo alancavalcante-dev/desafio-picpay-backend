@@ -26,7 +26,7 @@ class UserRepositoryTest {
 
     @Test
     @DisplayName("Deve trazer o usuário cadastrado")
-    void findUserByCpfCnpjCase1() {
+    void findUserByCpfCnpjFound() {
         UserDTO data = new UserDTO("Alan", "Pereira Cavalcante", "12345678901","alan.cavalcante.dev@gmail.com",
                 "SenhaPotente123$", true, new BigDecimal(10));
 
@@ -37,7 +37,7 @@ class UserRepositoryTest {
 
     @Test
     @DisplayName("Não deve trazer o usuário")
-    void findUserByCpfCnpjCase2() {
+    void findUserByCpfCnpjNotFound() {
         Optional<User> result = this.userRepository.findUserByCpfCnpj("12345678901");
         assertThat(result.isEmpty()).isTrue();
     }

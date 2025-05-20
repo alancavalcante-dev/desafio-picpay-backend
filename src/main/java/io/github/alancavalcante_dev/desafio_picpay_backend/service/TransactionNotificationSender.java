@@ -16,14 +16,31 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
+
+/**
+ * Classe responsável por enviar notificações de transações por e-mail
+ * através de uma API externa (https://util.devi.tools/api/v1/notify).
+ *
+ * A notificação contém o valor e uma mensagem personalizada.
+ *
+ * ⚠️ Importante:
+ * A API de notificação pode falhar ou estar fora do ar. Quando isso ocorre,
+ * o erro é capturado e salvo no banco de dados para monitoramento posterior,
+ * usando o repositório TransactionNotificationErrorRepository.
+ *
+ * Toda falha é tratada com log e persistência para evitar que o erro passe despercebido.
+ */
+
+
 @Service
 @Slf4j
 public class TransactionNotificationSender {
 
-    private final RestTemplate restTemplate = new RestTemplate();
-
     @Autowired
     private TransactionNotificationErrorRepository repository;
+
+    private final RestTemplate restTemplate = new RestTemplate();
+
 
     public void sender(User user, String message, BigDecimal value) {
         HashMap<String, String> payload = new HashMap<>();
@@ -53,6 +70,4 @@ public class TransactionNotificationSender {
             log.info("Erro de notificação salvada.");
         }
     }
-
-
 }

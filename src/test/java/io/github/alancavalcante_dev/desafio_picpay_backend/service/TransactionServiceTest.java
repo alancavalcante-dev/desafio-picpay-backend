@@ -41,7 +41,7 @@ class TransactionServiceTest {
 
     @Test
     @DisplayName("A transação deve ser criada com sucesso quando tudo estiver OK")
-    void registerTransactionCase1() {
+    void registerTransactionOk() {
         User sender = new User(1L, "Pedro", "Teste", "12345678901", "pedro@gmail.com", "123456", false, new BigDecimal(10));
         User receiver = new User(2L, "Flavio", "Teste", "12345678902", "flavio@gmail.com", "123456", true, new BigDecimal(20));
 
@@ -63,7 +63,7 @@ class TransactionServiceTest {
 
     @Test
     @DisplayName("Deve lançar uma exceção quando a transação não for autorizada")
-    void registerTransactionCase2() throws Exception {
+    void registerTransactionError() throws Exception {
         User sender = new User(1L, "Pedro", "Teste", "12345678901", "pedro@gmail.com", "123456", false, new BigDecimal(10));
         User receiver = new User(2L, "Flavio", "Teste", "12345678902", "flavio@gmail.com", "123456", true, new BigDecimal(20));
 

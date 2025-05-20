@@ -21,6 +21,7 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    // Porque o h2-database utiliza a tag Value nativamente
     @Column(name = "amount")
     private BigDecimal value;
 
@@ -44,7 +45,4 @@ public class Transaction {
                 dto.value()
         );
     }
-
-
-
 }
