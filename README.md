@@ -152,6 +152,7 @@ A aplicação possui um `@RestControllerAdvice` que captura `RuntimeException` e
 🔗 http://localhost:8080/transfer <br>
 🔗 http://localhost:8080/user <br>
 🔗 http://localhost:9090/actuator <br>
+🔗 http://localhost:8080/swagger-ui/index.html
 
 
 ---
