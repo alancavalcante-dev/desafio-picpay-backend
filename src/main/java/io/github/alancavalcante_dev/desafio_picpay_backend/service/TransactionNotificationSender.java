@@ -1,5 +1,6 @@
 package io.github.alancavalcante_dev.desafio_picpay_backend.service;
 
+import io.github.alancavalcante_dev.desafio_picpay_backend.domain.TransactionNotificationError;
 import io.github.alancavalcante_dev.desafio_picpay_backend.domain.User;
 import io.github.alancavalcante_dev.desafio_picpay_backend.repository.TransactionNotificationErrorRepository;
 import lombok.extern.slf4j.Slf4j;

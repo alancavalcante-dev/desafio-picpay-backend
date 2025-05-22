@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /** Classe feita para não passar erros para o usuário que esteja consultando.
  * Assim não passa erros que possam gerar uma falha de segurança.
- * */
+ */
 
 @Slf4j
 @RestControllerAdvice

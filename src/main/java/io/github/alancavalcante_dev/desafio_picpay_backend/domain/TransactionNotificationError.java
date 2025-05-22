@@ -1,6 +1,5 @@
-package io.github.alancavalcante_dev.desafio_picpay_backend.service;
+package io.github.alancavalcante_dev.desafio_picpay_backend.domain;
 
-import io.github.alancavalcante_dev.desafio_picpay_backend.domain.User;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
