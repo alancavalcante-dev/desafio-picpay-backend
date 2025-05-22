@@ -1,10 +1,8 @@
 
-# 💸 Desafio PicPay - Backend
+# 💸 Desafio Backend - PicPay
 
+O PicPay Simplificado é uma plataforma de pagamentos desenvolvida para o desafio técnico publicado pelo PicPay. O objetivo do projeto é simular a arquitetura de um sistema financeiro inspirado no funcionamento do PicPay, permitindo operações básicas de movimentação financeira entre usuários.
 
-
-O PicPay Simplificado é uma plataforma de pagamentos desenvolvida para resolver o desafio técnico proposto pelo o mesmo, com o objetivo de simular a arquitetura de um sistema financeiro, inspirado no funcionamento do PicPay.
-A proposta do projeto é permitir depósitos e transferências de dinheiro entre usuários, com duas categorias de conta: usuários comuns e lojistas. Ambos possuem carteiras digitais com saldo e podem interagir entre si conforme regras definidas.
 ---
 
 ## 🧠 Motivação e Raciocínio
@@ -26,12 +24,18 @@ A ideia foi simular um ambiente de produção com as seguintes preocupações:
 - **Spring Boot 3.4.5**
 - **Spring Data JPA**
 - **H2 Database (em memória)**
+- **JUnit - Teste Automatizado**
 - **Lombok**
-- **jBCrypt**
+- **jBCrypt - Para criptografar senhas**
 - **REST APIs**
 - **Swagger**
+- **Actuator - métricas e observabilidade**
 - **Docker**
-- **Docker**
+- **Git**
+- **Validation**
+- **Geração de Logs**
+- **Pool de conexões com HikariCp**
+
 
 ---
 
@@ -41,30 +45,31 @@ A ideia foi simular um ambiente de produção com as seguintes preocupações:
 io.github.alancavalcante_dev.desafio_picpay_backend
 │
 ├── common
-│   └── ExceptionHandlerGlobal.java       # Tratamento global de exceções
+│   └── ExceptionHandlerGlobal.java         # Tratamento global de exceções
 │
 ├── controller
-│   ├── dto                               # DTOs de entrada
-│   ├── TransactionController.java        # Endpoint de transações
-│   └── UserController.java               # Endpoint de usuários
+│   ├── dto                                 # DTOs de entrada
+│   ├── TransactionController.java        
+│   └── UserController.java               
 │
 ├── domain
-│   ├── Transaction.java                  # Entidade de transação
-│   └── User.java                         # Entidade de usuário
+│   ├── Transaction.java       
+│   │   TransactionNotificationError.java   # Entidade de erro de notificação           
+│   └── User.java                         
 │
 ├── repository
-│   ├── TransactionRepository.java        # Acesso à tabela de transações
-│   ├── UserRepository.java               # Acesso à tabela de usuários
+│   ├── TransactionRepository.java        
+│   ├── UserRepository.java               
 │   └── TransactionNotificationErrorRepository.java  # Registro de erros de notificação
 │
 ├── service
-│   ├── TransactionService.java           # Lógica principal de transações
-│   ├── UserService.java                  # Cadastro de usuário
-│   ├── AuthorizationTransaction.java     # Verificação externa de autorização
-│   ├── NotificationTransactionSender.java # Envio de notificações
-│   └── TransactionNotificationError.java # Entidade de erro de notificação
+│   ├── TransactionService.java             # Lógica principal de transações
+│   ├── UserService.java                    # Cadastro de usuário
+│   ├── AuthorizationTransaction.java       # Verificação externa de autorização
+│   └── NotificationTransactionSender.java  # Envio de notificações
+│   
 │
-└── DesafioPicpayBackendApplication.java  # Classe principal
+└── DesafioPicpayBackendApplication.java  
 ```
 
 ---
@@ -104,6 +109,20 @@ cd desafio-picpay-backend
 ./mvnw spring-boot:run
 ```
 
+Ou utilizar o Docker
+```bash
+# Clonar o projeto
+git clone https://github.com/alancavalcante-dev/desafio-picpay-backend.git
+
+# Acessar a pasta
+cd desafio-picpay-backend
+
+# Criar a imagem
+docker build -t desafio-picpay-backend .
+
+# Criar e executar o container da imagem gerada
+docker run -p 8080:8080 -p 9090:9090 desafio-picpay-backend
+```
 ---
 
 ## 🛠 Endpoints Principais
@@ -117,23 +136,31 @@ cd desafio-picpay-backend
 
 ## 🔒 Segurança e Tratamento de Erros
 
-A aplicação possui um `@RestControllerAdvice` que captura `RuntimeException` e retorna um status HTTP 422, impedindo a exposição de mensagens sensíveis ao cliente.
+A aplicação possui um `@RestControllerAdvice` que captura `RuntimeException` e retorna um status HTTP 400, impedindo a exposição de mensagens sensíveis ao cliente.
 
 ---
 
 ## 📋 Possíveis Melhorias
 
 - Implementar autenticação JWT.
-- Adicionar testes unitários e de integração.
-- Criar uma interface Swagger.
-- Internacionalização de mensagens de erro.
-- Logs estruturados com mais detalhes.
+- Bloquear valor monetário na criação do usuário
 
 ---
 
-## 🧑‍💻 Desenvolvido por
+## 🌐 URLs
 
-Alan Cavalcante  
-Estudante de ADS, Desenvolvedor Backend em formação.
+🔗 http://localhost:8080/transfer <br>
+🔗 http://localhost:8080/user <br>
+🔗 http://localhost:9090/actuator <br>
+
+
+---
+
+## 📬 Contato
+
+Desenvolvido por **Alan Pereira Cavalcante**
+
+📧 alan.cavalcante.dev@gmail.com <br>
+📞 (11) 986815754
 
 ---
